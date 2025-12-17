@@ -1,7 +1,9 @@
 package models
 
+import "time"
+
 type User struct {
-	ID    uint   `json:"id"`
-	Name  string `json:"name"`
-	Email string `json:"email"`
+	ID   int       `json:"id"`
+	Name string    `json:"name"`
+	DOB  time.Time `json:"dob"`
 }
